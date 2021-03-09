@@ -1,0 +1,79 @@
+.card {
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.315);
+  overflow: hidden;
+ 
+  &__header {
+    width: 100%;
+    display: block;
+  }
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid $lightGray;
+
+    img {
+      width: 35%;
+      border-radius: 50%;
+      border: 5px solid $white;
+      background-color: $white;
+      margin: -50px auto 0 auto;
+    }
+
+    &__name {
+      font-size: $font-med;
+      margin-top: 2rem;
+
+      &__age {
+        font-weight: 400;
+        margin-left: 0.5rem;
+        color: $darkGray;
+        opacity: 0.6;
+      }
+    }
+
+    &__city {
+      margin-top: 0;
+      margin-bottom: 2rem;
+      font-size: $font-sm;
+      color: $darkGray;
+      opacity: 0.6;
+    }
+  }
+
+  &__footer {
+    display: flex;
+
+    padding: 0 25px;
+    justify-content: space-evenly;
+
+    &__socialStats {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      h3 {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+        font-size: $font-med;
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 2rem;
+        font-weight: 400;
+        font-size: $font-xsm;
+        color: $darkGray;
+        opacity: 0.6;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
